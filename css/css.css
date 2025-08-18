@@ -106,3 +106,29 @@ img{
 #results { max-height:300px; overflow-y:auto; border:1px solid #ddd; }
 .result-item { padding:8px; cursor:pointer; border-bottom:1px solid #eee; }
 .result-item:hover { background:#f8f9fa; }
+
+    /* Modal Styling Elegan */
+    .modal-content {
+      border-radius: 20px;
+      border: none;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      animation: scaleIn .3s ease-in-out;
+    }
+    .modal-header {
+      border: none;
+      background: linear-gradient(135deg, #198754, #20c997);
+      color: #fff;
+      border-radius: 20px 20px 0 0;
+    }
+    .modal-body {
+      font-size: 1.1rem;
+      padding: 25px;
+    }
+    .modal-footer {
+      border: none;
+      padding: 20px;
+    }
+    @keyframes scaleIn {
+      from {transform: scale(0.9); opacity: 0;}
+      to {transform: scale(1); opacity: 1;}
+    }
