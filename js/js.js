@@ -140,9 +140,23 @@ form.addEventListener('submit', e => {
       form.reset();
 
       // Isi teks modal
-      document.getElementById("thanksText").textContent =
-        `Halo ${nama}, terima kasih telah memesan ${paketobat}. 
-        Silakan hubungi admin untuk konfirmasi pesanan Anda.`;
+      document.getElementById("judulModal").textContent =
+        `Halo Pak/Bu ${nama}`;
+
+document.getElementById("thanksText").innerHTML =`
+<div class="text-center bg-light rounded-4 shadow-sm">
+  <img style="width: 100%; max-width: 200px;" src="/assets/dokter.png" alt="">
+  <p class="h5 fw-bold text-success my-2">
+    Terima Kasih Telah Melakukan Pengisian Formulir Pemesanan ${paketobat}
+  </p>
+  <blockquote class="fst-italic text-secondary lh-sm">"Kami Doakan Semoga Dengan Perantara Obat Jantung Xerdiove Ini, Penyakit Jantung Anda Dapat Secepatnya Sembuh seperti Pasien Kami yang sudah Berhasil Sembuh. AMIIIN YAROBBAL'ALAMIN"</blockquote>
+  <p class="h6 mb-2">
+    Selanjutnya klik tombol <span class="fw-semibold text-success">Konfirmasi Pemesanan</span> di bawah ini
+  </p>
+  <p class="lh-sm h6">
+    Agar Anda dapat langsung terhubung dengan kami untuk melakukan konfirmasi pesanan
+  </p>
+</div>`;
 
       // Tampilkan modal
       const modal = new bootstrap.Modal(document.getElementById('thanksModal'));
@@ -165,3 +179,4 @@ form.addEventListener('submit', e => {
       tombol.textContent = "Kirim Ulang Pesanan";
     });
 });
+
