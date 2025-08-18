@@ -115,7 +115,7 @@ document.getElementById('alamatutama').addEventListener('input', async function(
 });
 
 //kirim wa
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzVsoly_ogNtebfn1A5CqPy1XVG69TEqg_PUQk6Rb8oV7daLEsbtzEftD-mVfhj19cnQw/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzVsoly_ogNtebfn1A5CqPy1XVG69TEqg_PUQk6Rb8oV7daLEsbtzEftD-mVfhj19cnQw/exec';
 const form = document.getElementById('orderForm');
 const status = document.getElementById('status');
 const tombol = document.getElementById('tombolformsubmit');
@@ -123,37 +123,45 @@ const tombol = document.getElementById('tombolformsubmit');
 form.addEventListener('submit', e => {
   e.preventDefault();
 
-  // Disable tombol + ubah teks
   tombol.disabled = true;
   tombol.textContent = "Mengirim...";
+  status.textContent = "Sedang mengirim...";
 
   fetch(scriptURL, { method: 'POST', body: new FormData(form) })
     .then(response => {
       status.textContent = "Data berhasil dikirim!";
       tombol.textContent = "Terkirim ✅";
 
-      // Ambil data user dari form
-      const nama = form.nama.value || '';
-      const paketobat = form.paket.value || '';
-      
+      // Ambil data user
+      const nama = form.nama.value || 'Pelanggan';
+      const paketobat = form.paket.value || 'Produk';
+
       // Reset form
       form.reset();
 
-      // 1. Kirim ke WhatsApp penjual
-      const waPenjual = '6285185044075'; // format +62 tanpa 0
+      // Isi teks modal
+      document.getElementById("thanksText").textContent =
+        `Halo ${nama}, terima kasih telah memesan ${paketobat}. 
+        Silakan hubungi admin untuk konfirmasi pesanan Anda.`;
+
+      // Tampilkan modal
+      const modal = new bootstrap.Modal(document.getElementById('thanksModal'));
+      modal.show();
+
+      // Tombol WA
+      const waPenjual = '6285185044075';
       const pesan = `Halo Dok, Saya sudah melakukan pemesanan *${paketobat}* atas nama *${nama}*. Mohon segera diproses ya. Terima kasih :)`;
       const waLink = `https://wa.me/${waPenjual}?text=${encodeURIComponent(pesan)}`;
 
-      // Buka WA di tab baru
-      window.open(waLink, '_blank');
+      document.getElementById("btnWA").onclick = () => {
+        window.open(waLink, '_blank');
+      };
     })
     .catch(error => {
       status.textContent = "Gagal mengirim data.";
       console.error('Error!', error.message);
 
-      // Aktifkan kembali tombol jika gagal
       tombol.disabled = false;
       tombol.textContent = "Kirim Ulang Pesanan";
     });
 });
-
