@@ -140,12 +140,12 @@ form.addEventListener('submit', e => {
       form.reset();
 
       // Isi teks modal
-      document.getElementById("judulModal").textContent =
-        `Halo Pak/Bu ${nama}`;
+      document.getElementById("judulModal").innerHTML =
+        `<span class="text-uppercase">Halo Pak/Bu ${nama}</span>`;
 
 document.getElementById("thanksText").innerHTML =`
 <div class="text-center bg-light rounded-4 shadow-sm">
-  <img style="width: 100%; max-width: 200px;" src="/assets/dokter.png" alt="">
+  <img class="img-thumbnail rounded-5" style="width: 100%; max-width: 200px;" src="/assets/dokter.png" alt="">
   <p class="h5 fw-bold text-success my-2">
     Terima Kasih Telah Melakukan Pengisian Formulir Pemesanan ${paketobat}
   </p>
@@ -179,4 +179,5 @@ document.getElementById("thanksText").innerHTML =`
       tombol.textContent = "Kirim Ulang Pesanan";
     });
 });
+
 
