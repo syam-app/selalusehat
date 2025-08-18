@@ -125,11 +125,11 @@ form.addEventListener('submit', e => {
 
   tombol.disabled = true;
   tombol.textContent = "Mengirim...";
-  status.textContent = "Sedang mengirim...";
+  status.textContent = "Sedang mengirim data pesanan...";
 
   fetch(scriptURL, { method: 'POST', body: new FormData(form) })
     .then(response => {
-      status.textContent = "Data berhasil dikirim!";
+      status.textContent = "Data Pesanan berhasil dikirim!";
       tombol.textContent = "Terkirim ✅";
 
       // Ambil data user
@@ -179,5 +179,6 @@ document.getElementById("thanksText").innerHTML =`
       tombol.textContent = "Kirim Ulang Pesanan";
     });
 });
+
 
 
