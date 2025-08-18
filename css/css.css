@@ -121,14 +121,15 @@ img{
       border-radius: 20px 20px 0 0;
     }
     .modal-body {
-      font-size: 1.1rem;
-      padding: 25px;
+      font-size: 1rem;
+      padding: 15px;
     }
     .modal-footer {
       border: none;
-      padding: 20px;
+      padding: 15px;
     }
     @keyframes scaleIn {
       from {transform: scale(0.9); opacity: 0;}
       to {transform: scale(1); opacity: 1;}
     }
+
