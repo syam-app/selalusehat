@@ -141,7 +141,7 @@ form.addEventListener('submit', e => {
 
       // 1. Kirim ke WhatsApp penjual
       const waPenjual = '6285185044075'; // format +62 tanpa 0
-      const pesan = `Halo Dok, Saya sudah melakukan pemesanan *${paketobat}* atas nama *${nama}*. Mohon segera diproses ya. Terima kasih 🙏`;
+      const pesan = `Halo Dok, Saya sudah melakukan pemesanan *${paketobat}* atas nama *${nama}*. Mohon segera diproses ya. Terima kasih :)`;
       const waLink = `https://wa.me/${waPenjual}?text=${encodeURIComponent(pesan)}`;
 
       // Buka WA di tab baru
@@ -156,3 +156,4 @@ form.addEventListener('submit', e => {
       tombol.textContent = "Kirim Ulang Pesanan";
     });
 });
+
