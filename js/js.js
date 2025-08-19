@@ -102,7 +102,7 @@ window.addEventListener("load", () => {
     }, 3000);
 });
 //----------------------------------------------------------------
-const DATA_URL = "https://raw.githubusercontent.com/syam-app/jejelan/refs/heads/main/wilayah-id.json";
+const DATA_URL = "https://cdn.jsdelivr.net/gh/syam-app/jejelan/wilayah-id.json";
 let wilayahData = [];
 let timeout;
 async function loadWilayahData() {
@@ -178,5 +178,6 @@ form.addEventListener('submit', e => {
         tombol.textContent = "Kirim Ulang Pesanan"
     });
 });
+
 
 
