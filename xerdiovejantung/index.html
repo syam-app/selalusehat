@@ -4,7 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Xerdiove Nakara</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+      <!-- Bootstrap pakai preload -->
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" 
+        as="style" 
+        onload="this.onload=null;this.rel='stylesheet'">
+
+  <!-- Fallback untuk browser lama & no-JS -->
+  <noscript>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+  </noscript>
     <link rel="stylesheet" href="/css/css.css">
 </head>
 <style>
@@ -435,3 +443,4 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script src="/js/js.js" defer></script>
   </body>
 </html>
+
