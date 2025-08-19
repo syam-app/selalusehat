@@ -19,48 +19,57 @@
 .hero {
   background: #f8f9fa;
   text-align: center;
-  padding-bottom: 50px;
+  padding: 40px 20px;
 }
 .hero-title {
   font-size: 2rem;
   font-weight: bold;
-  background: linear-gradient(90deg, #198754, #28a745);
+  background: #28a745;
   color: #fff;
-  padding: 15px 0;
+  padding: 10px 0;
+  border-radius: 8px;
 }
 .hero-container {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 40px 20px;
 }
 .hero-heading {
   font-size: 1.8rem;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin: 20px 0 10px 0;
 }
 .hero-subtitle {
   color: #6c757d;
-  margin-bottom: 30px;
   font-size: 1rem;
+  margin-bottom: 30px;
 }
 .hero-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 15px;
 }
 .hero-card {
+  flex: 1 1 45%;
   background: #fff;
-  border-radius: 15px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  padding: 15px;
+  min-width: 160px;
+  max-width: 220px;
 }
 .hero-card-title {
-  margin-top: 15px;
+  margin-top: 10px;
   font-size: 1rem;
 }
 .hero-card-text {
   font-size: 0.85rem;
   color: #6c757d;
+}
+@media (max-width: 480px) {
+  .hero-card {
+    flex: 1 1 100%;
+  }
 }
 </style>
   <body>
@@ -76,7 +85,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <section id="hero" class="hero">
   <div class="hero-title">
-      XERDIOVE NAKARA
+    XERDIOVE NAKARA
   </div>
   <div class="hero-container">
     <h1 class="hero-heading">Herbal Alami untuk Kesehatan Jantung</h1>
@@ -97,7 +106,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <path fill-rule="evenodd" d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.8 11.8 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7 7 0 0 0 1.048-.625 11.8 11.8 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.54 1.54 0 0 0-1.044-1.263 63 63 0 0 0-2.887-.87C9.843.266 8.69 0 8 0m2.146 5.146a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793z"/>
         </svg>
         <h5 class="hero-card-title">Aman & Alami</h5>
-        <p class="hero-card-text">100% Dibuat dari bahan herbal pilihan tanpa efek samping & ketergantungan.</p>
+        <p class="hero-card-text">100% herbal tanpa efek samping & ketergantungan.</p>
       </div>
       <div class="hero-card">
         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="orange" viewBox="0 0 16 16">
@@ -111,7 +120,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31z"/>
         </svg>
         <h5 class="hero-card-title">Terpercaya</h5>
-        <p class="hero-card-text">Bergabunglah dengan ribuan orang yang sudah merasakan manfaat nyata.</p>
+        <p class="hero-card-text">Bergabunglah dengan ribuan orang yang merasakan manfaat nyata.</p>
       </div>
     </div>
   </div>
@@ -443,4 +452,5 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script src="/js/js.js" defer></script>
   </body>
 </html>
+
 
