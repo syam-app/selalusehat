@@ -137,3 +137,6 @@ img {
         opacity: 1
     }
 }
+#hero svg{
+      margin-top: 10px;
+    }
