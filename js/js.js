@@ -35,10 +35,73 @@ function startNotifLoop(DATA_ORDER) {
 }
 
 // langsung inline datanya
-const DATA_ORDER = [{"nama":"Farida","alamat":"Plaju","jumlah":1,"produk":"Xerdiove Obat Jantung"},{"nama":"Ahmad","alamat":"Lhokseumawe","jumlah":4,"produk":"Xerdiove Obat Jantung"},{"nama":"Rahmat","alamat":"Pontianak Kota","jumlah":2,"produk":"Xerdiove Obat Jantung"},{"nama":"Ridwan","alamat":"Rawalo","jumlah":1,"produk":"Xerdiove Obat Jantung"},{"nama":"Anton","alamat":"Cipari","jumlah":1,"produk":"Xerdiove Obat Jantung"},{"nama":"Puji","alamat":"Tabanan","jumlah":3,"produk":"Xerdiove Obat Jantung"},{"nama":"Lina","alamat":"Denpasar Timur","jumlah":3,"produk":"Xerdiove Obat Jantung"},{"nama":"Samsul","alamat":"Cipari","jumlah":1,"produk":"Xerdiove Obat Jantung"},{"nama":"Imam","alamat":"Ajibarang","jumlah":2,"produk":"Xerdiove Obat Jantung"},{"nama":"Ratna","alamat":"Mertoyudan","jumlah":4,"produk":"Xerdiove Obat Jantung"},{"nama":"Bambang","alamat":"Purwokerto Utara","jumlah":2,"produk":"Xerdiove Obat Jantung"},{"nama":"Sri","alamat":"Wonosobo","jumlah":3,"produk":"Xerdiove Obat Jantung"},{"nama":"Yudi","alamat":"Banjarnegara","jumlah":5,"produk":"Xerdiove Obat Jantung"},{"nama":"Nurul","alamat":"Pekalongan Barat","jumlah":1,"produk":"Xerdiove Obat Jantung"},{"nama":"Hari","alamat":"Tegal Timur","jumlah":2,"produk":"Xerdiove Obat Jantung"},{"nama":"Siti","alamat":"Brebes","jumlah":6,"produk":"Xerdiove Obat Jantung"},{"nama":"Gunawan","alamat":"Cirebon Selatan","jumlah":3,"produk":"Xerdiove Obat Jantung"},{"nama":"Wahyuni","alamat":"Kuningan","jumlah":2,"produk":"Xerdiove Obat Jantung"},{"nama":"Joko","alamat":"Majalengka","jumlah":4,"produk":"Xerdiove Obat Jantung"},{"nama":"Anisa","alamat":"Sumedang","jumlah":1,"produk":"Xerdiove Obat Jantung"},{"nama":"Sugeng","alamat":"Cimahi","jumlah":3,"produk":"Xerdiove Obat Jantung"},{"nama":"Utami","alamat":"Bandung Barat","jumlah":5,"produk":"Xerdiove Obat Jantung"},{"nama":"Bayu","alamat":"Garut","jumlah":3,"produk":"Xerdiove Obat Jantung"},{"nama":"Dewi","alamat":"Tasikmalaya","jumlah":2,"produk":"Xerdiove Obat Jantung"},{"nama":"Slamet","alamat":"Banjar","jumlah":1,"produk":"Xerdiove Obat Jantung"},{"nama":"Rina","alamat":"Ciamis","jumlah":4,"produk":"Xerdiove Obat Jantung"},{"nama":"Budi","alamat":"Pangandaran","jumlah":4,"produk":"Xerdiove Obat Jantung"},{"nama":"Yuliana","alamat":"Purwakarta","jumlah":1,"produk":"Xerdiove Obat Jantung"},{"nama":"Hendra","alamat":"Karawang Barat","jumlah":3,"produk":"Xerdiove Obat Jantung"},{"nama":"Citra","alamat":"Bekasi Timur","jumlah":2,"produk":"Xerdiove Obat Jantung"},{"nama":"Suryo","alamat":"Depok Barat","jumlah":1,"produk":"Xerdiove Obat Jantung"},{"nama":"Maya","alamat":"Sukabumi Utara","jumlah":5,"produk":"Xerdiove Obat Jantung"},{"nama":"Rizal","alamat":"Bogor Tengah","jumlah":1,"produk":"Xerdiove Obat Jantung"},{"nama":"Hesti","alamat":"Serang","jumlah":4,"produk":"Xerdiove Obat Jantung"},{"nama":"Teguh","alamat":"Tangerang Selatan","jumlah":2,"produk":"Xerdiove Obat Jantung"},{"nama":"Lukman","alamat":"Pandeglang","jumlah":1,"produk":"Xerdiove Obat Jantung"},{"nama":"Indah","alamat":"Lebak","jumlah":4,"produk":"Xerdiove Obat Jantung"},{"nama":"Rudi","alamat":"Bekasi Selatan","jumlah":3,"produk":"Xerdiove Obat Jantung"},{"nama":"Agus","alamat":"Jakarta Barat","jumlah":1,"produk":"Xerdiove Obat Jantung"},{"nama":"Yani","alamat":"Jakarta Selatan","jumlah":2,"produk":"Xerdiove Obat Jantung"},{"nama":"Nugroho","alamat":"Jakarta Timur","jumlah":4,"produk":"Xerdiove Obat Jantung"},{"nama":"Wulan","alamat":"Jakarta Pusat","jumlah":1,"produk":"Xerdiove Obat Jantung"},{"nama":"Rangga","alamat":"Bogor Utara","jumlah":6,"produk":"Xerdiove Obat Jantung"},{"nama":"Nia","alamat":"Depok Timur","jumlah":3,"produk":"Xerdiove Obat Jantung"},{"nama":"Aminah","alamat":"Probolinggo","jumlah":1,"produk":"Xerdiove Obat Jantung"},{"nama":"Guntur","alamat":"Situbondo","jumlah":2,"produk":"Xerdiove Obat Jantung"},{"nama":"Munir","alamat":"Bondowoso","jumlah":4,"produk":"Xerdiove Obat Jantung"},{"nama":"Rika","alamat":"Banyuwangi","jumlah":5,"produk":"Xerdiove Obat Jantung"},{"nama":"Suriani","alamat":"Jombang","jumlah":3,"produk":"Xerdiove Obat Jantung"},{"nama":"Kurnia","alamat":"Mojokerto","jumlah":2,"produk":"Xerdiove Obat Jantung"},{"nama":"Samsuri","alamat":"Magetan","jumlah":6,"produk":"Xerdiove Obat Jantung"},{"nama":"Wati","alamat":"Trenggalek","jumlah":5,"produk":"Xerdiove Obat Jantung"},{"nama":"Burhan","alamat":"Tulungagung","jumlah":3,"produk":"Xerdiove Obat Jantung"},{"nama":"Rosyid","alamat":"Blitar","jumlah":1,"produk":"Xerdiove Obat Jantung"},{"nama":"Maisaroh","alamat":"Nganjuk","jumlah":2,"produk":"Xerdiove Obat Jantung"},{"nama":"Agung","alamat":"Kota Malang","jumlah":4,"produk":"Xerdiove Obat Jantung"},{"nama":"Prasetyo","alamat":"Surabaya Timur","jumlah":6,"produk":"Xerdiove Obat Jantung"}];
-// jalankan notif loop
-startNotifLoop(DATA_ORDER);
+const DATA_ORDER = [
+    {"nama":"Farida","alamat":"Plaju","jumlah":1,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Ahmad","alamat":"Lhokseumawe","jumlah":4,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Rahmat","alamat":"Pontianak Kota","jumlah":2,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Ridwan","alamat":"Rawalo","jumlah":1,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Anton","alamat":"Cipari","jumlah":1,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Puji","alamat":"Tabanan","jumlah":3,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Lina","alamat":"Denpasar Timur","jumlah":3,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Samsul","alamat":"Cipari","jumlah":1,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Imam","alamat":"Ajibarang","jumlah":2,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Ratna","alamat":"Mertoyudan","jumlah":4,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Bambang","alamat":"Purwokerto Utara","jumlah":2,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Sri","alamat":"Wonosobo","jumlah":3,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Yudi","alamat":"Banjarnegara","jumlah":5,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Nurul","alamat":"Pekalongan Barat","jumlah":1,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Hari","alamat":"Tegal Timur","jumlah":2,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Siti","alamat":"Brebes","jumlah":6,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Gunawan","alamat":"Cirebon Selatan","jumlah":3,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Wahyuni","alamat":"Kuningan","jumlah":2,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Joko","alamat":"Majalengka","jumlah":4,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Anisa","alamat":"Sumedang","jumlah":1,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Sugeng","alamat":"Cimahi","jumlah":3,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Utami","alamat":"Bandung Barat","jumlah":5,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Bayu","alamat":"Garut","jumlah":3,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Dewi","alamat":"Tasikmalaya","jumlah":2,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Slamet","alamat":"Banjar","jumlah":1,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Rina","alamat":"Ciamis","jumlah":4,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Budi","alamat":"Pangandaran","jumlah":4,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Yuliana","alamat":"Purwakarta","jumlah":1,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Hendra","alamat":"Karawang Barat","jumlah":3,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Citra","alamat":"Bekasi Timur","jumlah":2,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Suryo","alamat":"Depok Barat","jumlah":1,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Maya","alamat":"Sukabumi Utara","jumlah":5,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Rizal","alamat":"Bogor Tengah","jumlah":1,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Hesti","alamat":"Serang","jumlah":4,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Teguh","alamat":"Tangerang Selatan","jumlah":2,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Lukman","alamat":"Pandeglang","jumlah":1,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Indah","alamat":"Lebak","jumlah":4,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Rudi","alamat":"Bekasi Selatan","jumlah":3,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Agus","alamat":"Jakarta Barat","jumlah":1,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Yani","alamat":"Jakarta Selatan","jumlah":2,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Nugroho","alamat":"Jakarta Timur","jumlah":4,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Wulan","alamat":"Jakarta Pusat","jumlah":1,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Rangga","alamat":"Bogor Utara","jumlah":6,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Nia","alamat":"Depok Timur","jumlah":3,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Aminah","alamat":"Probolinggo","jumlah":1,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Guntur","alamat":"Situbondo","jumlah":2,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Munir","alamat":"Bondowoso","jumlah":4,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Rika","alamat":"Banyuwangi","jumlah":5,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Suriani","alamat":"Jombang","jumlah":3,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Kurnia","alamat":"Mojokerto","jumlah":2,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Samsuri","alamat":"Magetan","jumlah":6,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Wati","alamat":"Trenggalek","jumlah":5,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Burhan","alamat":"Tulungagung","jumlah":3,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Rosyid","alamat":"Blitar","jumlah":1,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Maisaroh","alamat":"Nganjuk","jumlah":2,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Agung","alamat":"Kota Malang","jumlah":4,"produk":"Xerdiove Obat Jantung"},
+    {"nama":"Prasetyo","alamat":"Surabaya Timur","jumlah":6,"produk":"Xerdiove Obat Jantung"}
+];
 
+// tunda start notif 3 detik setelah halaman load
+window.addEventListener("load", () => {
+    setTimeout(() => {
+        startNotifLoop(DATA_ORDER);
+    }, 3000);
+});
+//----------------------------------------------------------------
 const DATA_URL = "https://raw.githubusercontent.com/syam-app/jejelan/refs/heads/main/wilayah-id.json";
 let wilayahData = [];
 let timeout;
@@ -79,6 +142,7 @@ document.getElementById('alamatutama').addEventListener('input', async function(
         })
     }, 400)
 });
+//------------------------------------------------------------------
 const scriptURL = 'https://script.google.com/macros/s/AKfycbzVsoly_ogNtebfn1A5CqPy1XVG69TEqg_PUQk6Rb8oV7daLEsbtzEftD-mVfhj19cnQw/exec';
 const form = document.getElementById('orderForm');
 const status = document.getElementById('status');
@@ -114,4 +178,5 @@ form.addEventListener('submit', e => {
         tombol.textContent = "Kirim Ulang Pesanan"
     });
 });
+
 
